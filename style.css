@@ -18,7 +18,7 @@ body {
     justify-content: stretch;
     justify-items: stretch;
     
-    margin-top: 2%;
+    margin-top: 1%;
     border: 2px solid white;
 }
 
@@ -28,11 +28,8 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: minmax(90px, auto);
-        align-items: stretch;
-        justify-content: stretch;
-        justify-items: stretch;
         
-        margin-top: 5%;
+        margin-top: 2%;
         border: 2px solid white;
     }
 }
@@ -62,7 +59,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 20%;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .Button {
@@ -103,7 +100,7 @@ body {
 
 .winnr {
     margin-top: 20px;
-
+    
     font-size: 30px; 
     color: rgb(249, 246, 255);
     letter-spacing: 3px;
@@ -119,6 +116,7 @@ span {
 #winnerList {
     text-align: center;
     animation: anim .3s alternate infinite;
+    margin-bottom: 40px;
 }
 
 @keyframes anim {
