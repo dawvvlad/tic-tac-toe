@@ -104,6 +104,7 @@ function getWinner() {
     
         winnerList.innerHTML = `'X' win! Press 'Restart'`;
         winnerList.className = `winnr`
+        winnerList.id = `winnerList`
 
         document.body.append(winnerList);
 
@@ -118,7 +119,8 @@ function getWinner() {
         Ospan.innerHTML = `${winnerOcount}`
 
         winnerList.innerHTML = `'O' win! Press 'Restart'`;
-        winnerList.className = `winnr`
+        winnerList.className = `winnr`;
+        winnerList.id = `winnerList`;
 
         document.body.append(winnerList);
 
@@ -127,7 +129,8 @@ function getWinner() {
 
     if((count2 === 9 && (!isWinnerXHorizontal || !isWinnerXVertical || !isWinnerXDiagonal)) || (count2 === 9 && (!isWinnerOHorizontal || !isWinnerOVertical || !isWinnerODiagonal))) {
         winnerList.innerHTML = `Draw! press 'Restart'`;
-        winnerList.className = `winnr`
+        winnerList.className = `winnr`;
+        winnerList.id = `winnerList`;
 
         document.body.append(winnerList);
 
